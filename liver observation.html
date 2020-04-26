@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>liver observation</title>
+        <style>
+            h1{
+                font-size: 70px;
+                text-align: center;
+                height: 50px;
+            }
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+            pre{
+                font-size: 20px;
+            }
+            div{
+                margin-left: 20%;
+                margin-right: 20%;
+                border-style: unset;
+
+            }
+            li{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>liver observation</h1>
+        <div>
+            <p>FHIR observation 描述肝臟病變部位</p>
+            <li>Date Element ID：該Data的ID</li>
+            <li>Name：名稱(可能是病人名稱或該案例的名稱)</li>
+            <li>Definition：定義(可能為該案例的描述)</li>
+            <li>Question：</li>
+            <li>Value： 肝臟的病變部位，有
+                Segment I|
+                Segment II|
+                Segment III|
+                Segment IVa|
+                Segment IVb|
+                Segment V|
+                Segment VI|
+                Segment VII|
+                Segment VIII|
+                Left lateral sector|
+                Left medial sector|
+                Right anterior sector|
+                Right posterior sector|
+                Left lobe|
+                Right lobe|
+                Uncertain|
+                Unknown</li>
+            <li>Version：版本編號(合併該影像的時間或日期)</li>
+            <li>Status：狀態</li>
+            <li>Source：來源(該Data來源)</li>
+            <li>Sets：</li>
+            
+
+            <hr>
+
+        <h3>Example：</h3>
+        <pre>
+        {
+            "dateelementid" ： "RDE1053"
+            "name" ：  "Location"
+            "definition" ： ""
+            "question" ： "Location"
+            "value" ： "Segment III"
+            "version" ： "1 (2020-03-06)"
+            "status" ： "Proposed"
+            "source" ： "DSI TOUCH-AI"
+            "sets" ： ""
+        }
+        </pre>
+        
+        <hr>
+    </div>
+    </body>
+</html>
